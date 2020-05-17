@@ -83,7 +83,7 @@ def replay():
         elif text == 'n':
             return False
         else:
-            print ('Not a recognised answer')
+            print ('Sorry, not a recognised answer')
 
 def take_turn(board, plyr):
     display_board(board)
