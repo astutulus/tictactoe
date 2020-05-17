@@ -77,13 +77,13 @@ def player_choice(board):
 
 def replay():
     while True:
-        text = input('Play again? (Y/N)')
-        if text=='Y':
+        text = input('Play again? (Y/N)').lower()
+        if text == 'y':
             return True
-        elif text =='N':
+        elif text == 'n':
             return False
         else:
-            print ('Not a recognised answer')
+            print ('Sorry, not a recognised answer')
 
 def take_turn(board, plyr):
     display_board(board)
